@@ -15,6 +15,7 @@ jobs:
       uses: actions/setup-java@v3
       with:
         java-version: '11'
+        distribution: 'temurin'  # Use the Temurin distribution of the JDK
 
     - name: Install Maven dependencies
       run: mvn install -DskipTests
